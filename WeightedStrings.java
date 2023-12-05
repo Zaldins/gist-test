@@ -5,18 +5,22 @@ import java.util.Map;
 
 public class WeightedStrings {
     public static void main(String[] args) {
+
+        // first input
         String stringInput = "abbcccd";
         int[] queries = {1, 3, 9, 8};
 
         List<String> results = weightedStrings(stringInput, queries);
         System.out.println(results);
 
+        // second input
         stringInput = "abbddd";
         queries = new int[]{1, 4, 8, 12};
 
         results = weightedStrings(stringInput, queries);
         System.out.println(results);
 
+        // three input
         stringInput = "abcdef";
         queries = new int[]{1, 3, 14, 16};
 
