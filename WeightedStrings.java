@@ -20,7 +20,7 @@ public class WeightedStrings {
         results = weightedStrings(stringInput, queries);
         System.out.println(results);
 
-        // three input
+        // third input
         stringInput = "abcdef";
         queries = new int[]{1, 3, 14, 16};
 

@@ -1,11 +1,21 @@
 public class HighestPalindrome {
     public static void main(String[] args) {
-        String inputString = "3943";
-
         //  k == the number of changes allowed
         int k = 1;
 
+        // first input
+        String inputString = "3943";
         String highestPalindrome = findHighestPalindrome(inputString, k);
+        System.out.println(highestPalindrome);
+
+        // second input
+        inputString = "2150";
+        highestPalindrome = findHighestPalindrome(inputString, k);
+        System.out.println(highestPalindrome);
+
+        // third input
+        inputString = "5135";
+        highestPalindrome = findHighestPalindrome(inputString, k);
         System.out.println(highestPalindrome);
     }
 
