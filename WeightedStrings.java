@@ -10,6 +10,18 @@ public class WeightedStrings {
 
         List<String> results = weightedStrings(stringInput, queries);
         System.out.println(results);
+
+        stringInput = "abbddd";
+        queries = new int[]{1, 4, 8, 12};
+
+        results = weightedStrings(stringInput, queries);
+        System.out.println(results);
+
+        stringInput = "abcdef";
+        queries = new int[]{1, 3, 14, 16};
+
+        results = weightedStrings(stringInput, queries);
+        System.out.println(results);
     }
 
     public static List<String> weightedStrings(String input, int[] queries) {
@@ -47,7 +59,7 @@ public class WeightedStrings {
         // - Outer loop iterates over each character in the input parameter. 'i' represents the current index
         // - Inner loop starts from the next index (i + 1) and looks for consecutive repeated characters. ( for detail, will be explained below )
         for (int i = 0; i < input.length(); i++) {
-           // Initialize substring with current character at index 'i'
+            // Initialize substring with current character at index 'i'
             String substring = String.valueOf(input.charAt(i));
 
             // Looking for consecutive repeated characters in input parameter
