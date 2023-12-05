@@ -1,3 +1,4 @@
+## Screenshot
 1. Screenshot WeightedStrings : 
 ![img_3.png](img_3.png)
 
@@ -10,7 +11,8 @@
 ![img_1.png](img_1.png)
 
    
-<br /><br/>
+
+## Complexity
 Here's a detailed breakdown of the time and space complexity of each line of the revised Java code for checking balanced brackets:
 
 ```java
