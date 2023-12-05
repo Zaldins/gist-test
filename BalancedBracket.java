@@ -5,9 +5,20 @@ public class BalancedBracket {
     static HashMap<Character, Character> bracketPairs = new HashMap<>();
 
     public static void main(String[] args) {
-        String expression = "{ [( , ) ] }";
 
+        // first input
+        String expression = "{ [( ) ] }";
         boolean isBalanced = isBalancedBracket(expression);
+        System.out.println(isBalanced ? "YES" : "NO");
+
+        // second input
+        expression = "{ }";
+        isBalanced = isBalancedBracket(expression);
+        System.out.println(isBalanced ? "YES" : "NO");
+
+        // third input
+        expression = "{ [ ,   ] }";
+        isBalanced = isBalancedBracket(expression);
         System.out.println(isBalanced ? "YES" : "NO");
     }
 
